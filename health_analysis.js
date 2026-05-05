@@ -55,9 +55,9 @@ function generateReport() {
     report.innerHTML += `${condition}: ${conditionsCount[condition]}<br>`;
     }
 
-    report.innerHTML += `<br>Gender-Based Conditions:<br>`;
+    report.innerHTML += `<br><br>Gender-Based Conditions:<br>`;
     for (const gender in genderConditionsCount) {
-    report.innerHTML += `${gender}:<br>`;
+    report.innerHTML += `<br>${gender}:<br>`;
     for (const condition in genderConditionsCount[gender]) {
         report.innerHTML += `&nbsp;&nbsp;${condition}: ${genderConditionsCount[gender][condition]}<br>`;
     }
